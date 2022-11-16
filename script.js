@@ -33,10 +33,11 @@ function playRound(comp,user){
 }
 function game(in_arr){
 var com
-var c=0, u=0
+var c=0, u=0;
 for (i=0;i<in_arr.length;i++){
     com=getComputerChoice()
     var test=playRound(com,in_arr[i])
+    
     if (test==0){
         c++
     }
