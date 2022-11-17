@@ -80,6 +80,8 @@ function reset (){
     document.getElementById('user').innerHTML=u;
     document.getElementById('comp').innerHTML=c;
     document.getElementById('message').innerHTML='Let\'s start, shall we!';
+    img1.src = "";
+    img2.src = "";
 }
 var c=0;
 var u=0;
