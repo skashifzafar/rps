@@ -31,22 +31,32 @@ function playRound(comp,user){
     }
 
 }
-function game(in_arr){
+function game(user){
 var com
+com=getComputerChoice()
+var test=playRound(com,user)
+if (test==0){
+    c++
+    //return ([test,c])
+    document.getElementById('message').innerHTML='Computer has won this round!'
+}
+else if(test==1){
+    u++
+    document.getElementById('message').innerHTML='User has won this round'
+    //return ([test,u])
+}  
+else{
+    document.getElementById('message').innerHTML='It\'s a draw!'
+}  
+console.log(c,u)
+document.getElementById('user').innerHTML=u
+document.getElementById('comp').innerHTML=c
+}
+function reset (){
+    c=0
+    u=0
+    console.log(c,u)
+    document.getElementById('user').innerHTML=u
+    document.getElementById('comp').innerHTML=c
+}
 var c=0, u=0;
-for (i=0;i<in_arr.length;i++){
-    com=getComputerChoice()
-    var test=playRound(com,in_arr[i])
-    
-    if (test==0){
-        c++
-    }
-    else if(test==1){
-        u++
-    }
-
-    console.log(test,com,in_arr[i],c,u)    
-}
-}
-var in_arr=["rock","paper","scissor","paper","scissor","rock"];
-game(in_arr)
