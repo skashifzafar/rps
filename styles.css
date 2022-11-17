@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    height: 50%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 80%;
+    padding-left: 0;
+    
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 235px;
+    width: 100%;
+}
+.reset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 235px;
+}
+#message{
+    display: flex;
+    align-items: center;
+    padding-left:250px ;
+    width: 100%;
+}

@@ -6,15 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type = "text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
-    <input type="button" onclick="game('rock')" value="Rock"></input>
-    </br> 
-    <input type="button" onclick="reset()" value="Reset"></input> 
-    <div id="user"></div>
-    </br>
-    <div id="comp"></div>
-    </br>
+<body> 
+    <div class="but_list"> 
+        <ul>
+            <li>
+                <input type="button" onclick="game('rock')" value="Rock"></input>
+            </li>
+            <li>
+                <input type="button" onclick="game('paper')" value="Paper"></input>
+            </li>
+            <li>
+                <input type="button" onclick="game('scissor')" value="Scissor"></input>
+            </li>
+        </ul> 
+    </div>
+    <div class="reset">
+        <input type="button" onclick="reset()" value="Reset"></input>   
+    </div>
+    <div class="data"> 
+
+        <div id="user"></div>
+        <div id="comp"></div>
+    </div>    
     <div id="message"></div>
 </body>
 </html>

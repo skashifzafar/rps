@@ -42,7 +42,7 @@ if (test==0){
 }
 else if(test==1){
     u++
-    document.getElementById('message').innerHTML='User has won this round'
+    document.getElementById('message').innerHTML='User has won this round!'
     //return ([test,u])
 }  
 else{
@@ -58,5 +58,6 @@ function reset (){
     console.log(c,u)
     document.getElementById('user').innerHTML=u
     document.getElementById('comp').innerHTML=c
+    document.getElementById('message').innerHTML='Let\'s start, shall we!'
 }
-var c=0, u=0;
+reset()
