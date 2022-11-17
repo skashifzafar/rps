@@ -73,15 +73,17 @@ document.getElementById('user').innerHTML=u
 document.getElementById('comp').innerHTML=c
 }
 function reset (){
-    
+    img1 = document.getElementById("user_img"); 
+    img2 = document.getElementById("comp_img"); 
     c=0;
     u=0;
     console.log(c,u);
     document.getElementById('user').innerHTML=u;
     document.getElementById('comp').innerHTML=c;
     document.getElementById('message').innerHTML='Let\'s start, shall we!';
-    img1.src = "";
-    img2.src = "";
+    img1.src = "./images/default.jpg";
+    img2.src = "./images/default.jpg";
 }
-var c=0;
-var u=0;
+document.addEventListener("DOMContentLoaded", function() {
+    reset();
+  });
