@@ -3,30 +3,50 @@ function getComputerChoice(){
     return ran_arr[(Math.random()*ran_arr.length)|0]
 }
 function playRound(comp,user){
-    if (user==comp){
-        return 2
+    img1 = document.getElementById("user_img"); 
+    img2 = document.getElementById("comp_img"); 
+    if (comp ==="rock"){
+            img2.src = "./images/rock.jpg";
+    }
+    else if (comp == "paper"){
+            img2.src = "./images/paper.jpg";
+    }
+    else if ("scissor"==comp){
+            img2.src = "./images/scissor.jpg";
     }
     switch(user){
         case "rock":
+            img1.src = "./images/rock.jpg";
             if (comp==="paper"){
                 return 0
             }
             if (comp==="scissor"){
                 return 1
+            }
+            else{
+                return 2
             }
         case "paper":
+            img1.src = "./images/paper.jpg";
             if (comp==="scissor"){
                 return 0
             }
             if (comp==="rock"){
                 return 1
             }
+            else{
+                return 2
+            }
         case "scissor":
+            img1.src = "./images/scissor.jpg";
             if (comp==="rock"){
                 return 0
             }
             if (comp==="paper"){
                 return 1
+            }
+            else{
+                return 2
             }
     }
 

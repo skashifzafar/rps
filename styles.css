@@ -2,7 +2,6 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
     align-items: center;
     height: 200px;
     width: 200px;
@@ -17,25 +16,38 @@ ul{
     display: flex;
     justify-content: space-between;
     gap: 20%;
-    padding-left: 0;
     
+}
+input[type='image']{
+    border: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #333; 
+    height: 150px;
 }
 .data{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding-left: 235px;
-    width: 100%;
+    width: 400px;
 }
 .reset{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 235px;
+    padding-left: 150px;
 }
 #message{
     display: flex;
     align-items: center;
-    padding-left:250px ;
+    padding-left:150px ;
     width: 100%;
+}
+img{
+height: 100px;
+border: 2px;
+border-style: solid;
+border-radius: 10px;
+border-color: #333; 
 }
