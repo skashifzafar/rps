@@ -53,11 +53,13 @@ document.getElementById('user').innerHTML=u
 document.getElementById('comp').innerHTML=c
 }
 function reset (){
-    c=0
-    u=0
-    console.log(c,u)
-    document.getElementById('user').innerHTML=u
-    document.getElementById('comp').innerHTML=c
-    document.getElementById('message').innerHTML='Let\'s start, shall we!'
+    
+    c=0;
+    u=0;
+    console.log(c,u);
+    document.getElementById('user').innerHTML=u;
+    document.getElementById('comp').innerHTML=c;
+    document.getElementById('message').innerHTML='Let\'s start, shall we!';
 }
-reset()
+var c=0;
+var u=0;

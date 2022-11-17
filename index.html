@@ -7,18 +7,19 @@
     <title>Document</title>
     <script type = "text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body> 
     <div class="but_list"> 
         <ul>
             <li>
-                <input type="button" onclick="game('rock')" value="Rock"></input>
+                <input type="image" src="./images/rock.jpg" onclick="game('rock')" name="Rock" alt="rock.jpg" ></input>
             </li>
             <li>
-                <input type="button" onclick="game('paper')" value="Paper"></input>
+                <input type="image" onclick="game('paper')"  src="./images/paper.jpg" name="Paper" alt="paper.jpg"></input>
             </li>
             <li>
-                <input type="button" onclick="game('scissor')" value="Scissor"></input>
+                <input type="image" src="./images/scissors.jpg" onclick="game('scissor')" alt="scissors.jpg" value="Scissor"></input>
             </li>
         </ul> 
     </div>
@@ -26,9 +27,14 @@
         <input type="button" onclick="reset()" value="Reset"></input>   
     </div>
     <div class="data"> 
-
-        <div id="user"></div>
-        <div id="comp"></div>
+        <div id="us">
+            <p>User:</p>
+            <div id="user"></div>
+        </div>
+        <div id="com">
+            <p>Computer:</p>
+            <div id="comp"></div>
+        </div>
     </div>    
     <div id="message"></div>
 </body>
