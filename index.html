@@ -5,41 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
-    <script type = "text/javascript" src="script.js"></script>
+    <script type = "text/javascript" src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     
 </head>
 <body> 
-    <div class="container">
-    <div class="data"> 
-        <div class="us">
-            <p>User:</p>
-            <div id="user"></div>
-            <img id="user_img">
+    <div id="container">
+        <div class="data"> 
+            <div class="us">
+                <p>User:</p>
+                <div id="user"></div>
+                <img id="user_img">
+            </div>
+            <div class="us">
+                <p>Computer:</p>
+                <div id="comp"></div>
+                <img id="comp_img">
+            </div>
+        </div>    
+        <div id="message"></div>
+        <div class="but_list"> 
+            <ul>
+                <li>
+                    <input type="image" id='image' src="./images/rock.jpg" onclick="game('rock')" name="Rock" alt="rock.jpg" ></input>
+                </li>
+                <li>
+                    <input type="image" id='image' onclick="game('paper')"  src="./images/paper.jpg" name="Paper" alt="paper.jpg"></input>
+                </li>
+                <li>
+                    <input type="image" id='image' src="./images/scissor.jpg" onclick="game('scissor')" alt="scissor.jpg" value="Scissor"></input>
+                </li>
+            </ul> 
         </div>
-        <div class="us">
-            <p>Computer:</p>
-            <div id="comp"></div>
-            <img id="comp_img">
-        </div>
-    </div>    
-    <div id="message"></div>
-    <div class="but_list"> 
-        <ul>
-            <li>
-                <input type="image" id='image' src="./images/rock.jpg" onclick="game('rock')" name="Rock" alt="rock.jpg" ></input>
-            </li>
-            <li>
-                <input type="image" id='image' onclick="game('paper')"  src="./images/paper.jpg" name="Paper" alt="paper.jpg"></input>
-            </li>
-            <li>
-                <input type="image" id='image' src="./images/scissor.jpg" onclick="game('scissor')" alt="scissor.jpg" value="Scissor"></input>
-            </li>
-        </ul> 
-    </div>
-    <div class="reset">
-        <input type="button" onclick="reset()" value="Reset"></input>   
-    </div>
     </div>
 </body>
 </html>

@@ -87,3 +87,12 @@ function reset (){
 document.addEventListener("DOMContentLoaded", function() {
     reset();
   });
+const container = document.querySelector('#container');
+const rst_div = document.createElement('div');
+rst_div.classList='reset';
+const rst_btn = document.createElement('input');
+rst_btn.type='button'
+rst_btn.value='Reset'
+rst_div.appendChild(rst_btn);
+container.appendChild(rst_div);
+rst_btn.addEventListener('click',reset)
