@@ -52,6 +52,7 @@ function playRound(comp,user){
 
 }
 function game(user){
+    console.log(user)
 var com
 com=getComputerChoice()
 var test=playRound(com,user)
@@ -88,6 +89,40 @@ document.addEventListener("DOMContentLoaded", function() {
     reset();
   });
 const container = document.querySelector('#container');
+const but_div = document.createElement('div')
+but_div.classList='but_list'
+const but_ul = document.createElement('ul')
+
+const ges_arr=["rock","paper","scissor"];
+for (let i=0;i<3;i++){
+const but_li = document.createElement('li')
+const but = document.createElement('input')
+but.type='image'
+but.classList=ges_arr[i]
+but.src='./images/'+ges_arr[i]+'.jpg'
+but.name=ges_arr[i]
+but.alt=ges_arr[i]+'.jpg'
+but_li.appendChild(but)
+but_ul.appendChild(but_li)
+//but.addEventListener('click',function(){game(ges_arr[i])})
+}
+but_div.appendChild(but_ul)
+container.appendChild(but_div)
+for (let i=0;i<3;i++){
+const but=document.querySelector("."+ges_arr[i])
+console.log(ges_arr[i])
+but.addEventListener('click',function(i){game(ges_arr[i])})
+}
+
+
+
+
+
+
+
+
+
+
 const rst_div = document.createElement('div');
 rst_div.classList='reset';
 const rst_btn = document.createElement('input');
