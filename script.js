@@ -89,10 +89,42 @@ document.addEventListener("DOMContentLoaded", function() {
     reset();
   });
 const container = document.querySelector('#container');
+const data_div=document.createElement('div')
+data_div.classList='data'
+//User 
+const data_div1=document.createElement('div')
+const u_p=document.createElement('p')
+u_p.textContent='User:'
+const user_div=document.createElement('div')
+user_div.id='user'
+const user_img=document.createElement('img')
+user_img.id='user_img'
+data_div1.appendChild(u_p)
+data_div1.appendChild(user_div)
+data_div1.appendChild(user_img)
+//Computer
+const data_div2=document.createElement('div')
+const c_p=document.createElement('p')
+c_p.textContent='Computer:'
+const comp_div=document.createElement('div')
+comp_div.id='comp'
+const comp_img=document.createElement('img')
+comp_img.id='comp_img'
+data_div2.appendChild(c_p)
+data_div2.appendChild(comp_div)
+data_div2.appendChild(comp_img)
+//Append of data field
+data_div.appendChild(data_div1)
+data_div.appendChild(data_div2)
+container.appendChild(data_div)
+//Message Output
+const msg_div=document.createElement('div')
+msg_div.id='message'
+container.appendChild(msg_div)
+//User inputs
 const but_div = document.createElement('div')
 but_div.classList='but_list'
 const but_ul = document.createElement('ul')
-
 const ges_arr=["rock","paper","scissor"];
 for (let i=0;i<3;i++){
 const but_li = document.createElement('li')
@@ -108,16 +140,7 @@ but.addEventListener('click',function(){game(ges_arr[i])})
 }
 but_div.appendChild(but_ul)
 container.appendChild(but_div)
-
-
-
-
-
-
-
-
-
-
+//Reset Logic
 const rst_div = document.createElement('div');
 rst_div.classList='reset';
 const rst_btn = document.createElement('input');
