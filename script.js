@@ -104,15 +104,10 @@ but.name=ges_arr[i]
 but.alt=ges_arr[i]+'.jpg'
 but_li.appendChild(but)
 but_ul.appendChild(but_li)
-//but.addEventListener('click',function(){game(ges_arr[i])})
+but.addEventListener('click',function(){game(ges_arr[i])})
 }
 but_div.appendChild(but_ul)
 container.appendChild(but_div)
-for (let i=0;i<3;i++){
-const but=document.querySelector("."+ges_arr[i])
-console.log(ges_arr[i])
-but.addEventListener('click',function(i){game(ges_arr[i])})
-}
 
 
 
