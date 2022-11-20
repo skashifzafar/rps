@@ -53,6 +53,7 @@ function playRound(comp,user){
 }
 function game(user){
     console.log(user)
+if (c<5 && u<5){
 var com
 com=getComputerChoice()
 var test=playRound(com,user)
@@ -63,7 +64,7 @@ if (test==0){
 }
 else if(test==1){
     u++
-    document.getElementById('message').innerHTML='User has won this round!'
+    document.getElementById('message').innerHTML='You won this round!'
     //return ([test,u])
 }  
 else{
@@ -72,6 +73,13 @@ else{
 console.log(c,u)
 document.getElementById('user').innerHTML=u
 document.getElementById('comp').innerHTML=c
+if (c==5){
+    document.getElementById('message').innerHTML='Computer wins! Please reset to start over.'
+}
+if (u==5){
+    document.getElementById('message').innerHTML='You win! Please reset to start over.'
+}
+}
 }
 function reset (){
     img1 = document.getElementById("user_img"); 
